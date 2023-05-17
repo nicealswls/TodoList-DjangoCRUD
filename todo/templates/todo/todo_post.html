@@ -23,7 +23,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <form method="POST">
-                                    <!-- csrf 놓치지 않도록 조심 --> {% csrf_token %} {{ form.as_p }}
+                                    <!-- csrf 놓치지 않도록 조심 --> {% csrf_token %} {{ form.as_p }} <!-- form 태그를 POST 방식으로 데이터 전송할 시 보안 문제 때문에 csrf_token도 붙여야 함 -->
                                     <button type="submit" class="btn btn-primary">등록</button>
                                 </form>    
                             </div>
